@@ -29,5 +29,52 @@ const mo = 40;
 // update and re-seclare ไม่ได้ mo = 70;
 console.log(mo);
 
+//if/else
+function test(a){
+let result;
+if(a < 0){
+    result = 'Not positive';
+}else if(a == 0){
+    result = '0';
+}else{
+    result = 'positive';
+}
+return result;
+}
 
+console.log(test(10));
+console.log(test(0));
+console.log(test(-5));
 
+// for
+function testTwo(){
+    let f = 0;
+    for(let i = 0; i < 10; i++){
+        f = f + i;
+        console.log(i);
+    }
+    console.log(f);
+}
+testTwo();
+
+//for-of ใช้คู่กับ array
+function testThree(){
+    let array = [1,2,3,4,5,6];
+    for(let e of array){
+        console.log(e);
+    }
+}
+testThree();
+
+// for-in วนลูป obj
+function testFour(){
+const person = {
+    name : 'Mhai',
+    age : 19 ,
+    gender : 'female',
+}
+    for(let key in person){
+        console.log(key,' : ',person[key]);
+    }
+}
+testFour();
