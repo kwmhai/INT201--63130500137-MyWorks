@@ -28,4 +28,4 @@ console.log(`15 === '15' ${15 === '15'}`); //false
 console.log(`5 < '10' && '1' > 5 is  ${5 < '10' && '1' > 5}`); //false T and F = F
 
 console.log(`5 < '10' || '1' > 5 is  ${5 < '10' || '1' > 5}`); //true T or F = T
-console.log(`!(1) is ${!0}`); //true
+console.log(`!(0) is ${!0}`); //true
