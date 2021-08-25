@@ -6,26 +6,26 @@ console.log(5 / 2); // => 2.5: division
 
 // JavaScript defines some shorthand arithmetic operators
 let count = 0; // Define a variable
-count++; // Increment the variable
-count--; // Decrement the variable
-count += 3; // Add 3: same as count = count + 3;
-count *= 2; // Multiply by 2: same as count = count * 2;
+count++; // Increment the variable  (1)
+count--; // Decrement the variable  (0)
+count += 3; // Add 3: same as count = count + 3; (0 = 0 +3) = 3
+count *= 2; // Multiply by 2: same as count = count * 2; (3 = 3*2) = 6
 console.log(`count = ${count}`); // => 6: variable names are expressions
 
 //conditional operator
-let result = count > 5 ? 'count > 5' : ' count<=5';
+let result = count > 5 ? 'count > 5' : ' count<=5'; //ถ้า count > 5 ให้ทำ 'count > 5' แต่ถ้า count ไม่ได้ > 5 ให้ทำ 'count<=5'
 console.log(`result = ${result}"`);
 //== and != non-strict equality
 //If the two operands are different types, interpreter attempts to convert them to suitable type.
 console.log(`15 == '15' ${15 == '15'}`); //true
 
-//=== and!=== strict equality without type conversion
+//=== and!=== strict equality without type conversion มันจะไม่เปลี่ยน type ให้
 console.log(`15 === '15' ${15 === '15'}`); //false
 
 //logical operators
 // && (and), || (or), ! (not)
 
-console.log(`5 < '10' && '1' > 5 is  ${5 < '10' && '1' > 5}`); //false
+console.log(`5 < '10' && '1' > 5 is  ${5 < '10' && '1' > 5}`); //false T and F = F
 
-console.log(`5 < '10' || '1' > 5 is  ${5 < '10' || '1' > 5}`); //true
-console.log(`!(0) is ${!0}`); //true
+console.log(`5 < '10' || '1' > 5 is  ${5 < '10' || '1' > 5}`); //true T or F = T
+console.log(`!(1) is ${!0}`); //true

@@ -31,7 +31,7 @@ console.log(`type of myUndefined is ${typeof myUndefined}`);
 
 let mySymbol = Symbol();
 console.log(`type of mySymbol is ${typeof mySymbol}`);
-
+//type เป็น Obj
 let myNull = null;
 console.log(`type of myNull is ${typeof myNull}`);
 
@@ -58,16 +58,23 @@ console.log(`${JSON.stringify(myObj)}`);
 //The JSON.stringify() method converts a JavaScript object or value to a JSON string
 console.log(`type of myObj is ${typeof myObj}`);
 
+
 newObj = myObj;
 console.log(`${JSON.stringify(newObj)}`);
 console.log(`type of newObj is ${typeof newObj}`);
 
-console.log(`newObj === myObj is ${newObj === myObj}`);
-console.log(`myObj1 === myObj2 is ${myObj === myObj2}`);
+console.log(`newObj === myObj is ${newObj === myObj}`); // true
+console.log(`myObj1 === myObj2 is ${myObj === myObj2}`); //false
 
 let a = [];
 let b = a;
-b[0] = 1;
+b[0] = 1; 
+b[1] = 2;
+//เวลาที่เพิ่มค่าลงไปใน array b ค่าใน array ก็จะถูกเพิ่มไปด้วย
 let c = [1];
-console.log(`a === b is ${a === b}`);
-console.log(`b == c is ${b == c}`);
+
+console.log(a); //[1]
+console.log(b);//[1]
+
+console.log(`a === b is ${a === b}`); // true
+console.log(`b == c is ${b == c}`); // false
