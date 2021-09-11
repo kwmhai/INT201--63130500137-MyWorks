@@ -11,6 +11,7 @@ let person2 = new Person('Joe', 20, 'Doctor');
 person1.sayName(); //"Pot"
 person2.sayName(); //"Joe
 
+
 console.log(Person.prototype.isPrototypeOf(person1));
 console.log(Object.prototype.isPrototypeOf(person1));
 
