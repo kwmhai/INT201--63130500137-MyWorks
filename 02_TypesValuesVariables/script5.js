@@ -1,6 +1,6 @@
 1 + ' objects'; //"1 objects":  Number 1 converts to a string
 '5' * '4'; // 20: both strings convert to numbers
-let n = 'y' + 1; // n == NaN; string "y" can't convert to a number
+let n = 'y' - 1; // n == NaN; string "y" can't convert to a number
 
 console.log(`1 + ' objects' is ${1 + ' objects'}`);
 console.log(`'5' * '4' is ${'5' * '4'}`);

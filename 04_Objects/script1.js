@@ -70,7 +70,7 @@ class Rectangle {
     // Everything added to 'this' will exist on each individual instance
     this._width = width;
     this._height = height;
-    alert('Rectangle constructor working');
+    console.log('Rectangle constructor working');
   }
   // Everything defined in the class body is defined on the class prototype object and sharing between instances.
   area() {
@@ -106,7 +106,8 @@ console.log(rec1.width); //2.5
 console.log(rec1.height); //3.5
 console.log(rec1.area()); //8.75
 console.log(rec1.toString()); //width = 2.5, height = 3.5, area = 8.75
-
+rec1.width = 3;
+console.log(rec1.width);
 //create object with Object.create()
 let square = Object.create(rec1);
 square.perimeter = function () {
@@ -124,9 +125,10 @@ console.log(square.toString()); //width: 2, height = 3
 console.log(square instanceof Rectangle); //true
 console.log(square instanceof Object); //true
 
+
 //An Object is passing by references
 let point = { x: 10, y: 20 };
-let newPoint = point;
+let newPoint = point; // เอาค่า address ให้กัน
 console.log(point); //{ x: 10, y: 20 }
 newPoint.x = 30;
 console.log(point); //{x:30, y:20);

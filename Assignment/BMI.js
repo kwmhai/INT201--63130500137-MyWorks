@@ -1,19 +1,9 @@
-function body(pounds, inches){
-    this.pounds = pounds;
-    this.inches = inches;
-    
-    const kilogram = 0.453592;
-    const meter = 0.0254;
-
-    this.cal = function(){
-        this.kg = this.pounds * kilogram;
-        this.m = this.inches * meter;
-        console.log("BMI = " + this.kg/(this.m**2));
-    }
+function BMI(pound , inch){
+const kg = pound * 0.453592;
+const m = inch * 0.0254;
+let bmi = kg/Math.pow(m,2);
+return bmi;
 }
-
-let body1 = new body(40.25, 40.75);
-
-body1.cal();
-console.log(body1.kg);
-console.log(body1.m);
+console.log("1 "+BMI(40.25 , 40.75));
+console.log("2 " + BMI(36.5 , 39));
+console.log("3 " + BMI(51 , 32));

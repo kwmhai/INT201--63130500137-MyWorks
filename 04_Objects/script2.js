@@ -12,7 +12,7 @@ primitivePassingValue(y);
 console.log(y); //"A"
 
 //Non Primitive types (object/null) Pass by reference
-function objectPassingReference(value) {
+function objectPassingReference(value) { //value = obj เอา address ให้ value
   value.prop = value.prop + 1;
 }
 

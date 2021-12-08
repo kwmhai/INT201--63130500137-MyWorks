@@ -1,3 +1,43 @@
+function reverse(text){
+    return text.split("").reverse().join("");
+}
+console.log(reverse('hello  world'));
+
+
+function reverse2(text){
+  return text.split("");
+}
+console.log(reverse2('hello world'));
+
+function reverse2(text){
+  this.t = text;
+  return this.t.rep;
+}
+console.log(reverse2('hello'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 console.log(reverse('Hello Javascript'));
 console.log(reverse2('Hello World'));

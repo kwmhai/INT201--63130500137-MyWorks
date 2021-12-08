@@ -15,6 +15,7 @@ person2.sayName(); //"Joe
 console.log(Person.prototype.isPrototypeOf(person1));
 console.log(Object.prototype.isPrototypeOf(person1));
 
+//สร้างนอก method
 Person.prototype.greeting = function () {
   return `Hello, ${this.name}`;
 };

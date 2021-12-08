@@ -4,20 +4,20 @@ for(let i =0; i<3; i++){
 }
 console.log("RandomNumber : " + number);
 
-    let sumNumber = number.reduce((sum, nums) => {
+   /* let sumNumber = number.reduce((sum, nums) => {
 
         return sum + nums;
 
         });
-console.log('Sum : '+sumNumber);
-/*function sum(){
+console.log('Sum : '+sumNumber);*/
+function sum(){
     let sum = 0;
     for(let i = 0;i<number.length;i++){
         sum = sum + number[i];
     }
     console.log(sum)
 }
-sum();*/
+sum();
 
 
 function min(){

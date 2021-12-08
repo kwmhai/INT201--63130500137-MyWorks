@@ -13,11 +13,12 @@ std = 60;
 function doSometing(){
     // local scope ประกาศตัวแปรอยู่ใน fn อ้างถึงได้แค่ใต้ปีกกานี้เท่านั้น
     var msg = 'int201-JS';
-console.log(msg);
+//console.log(msg);
+return msg;
 }
 //console.log(msg); อ้างถึงนอกปีกกาไม่ได้ error
 console.log(std);
-doSometing();
+console.log(doSometing());
 
 let po = 50;
 // let po = 'int201'; redecalre ไม่ได้
@@ -53,9 +54,10 @@ function testTwo(){
         f = f + i;
         console.log(i);
     }
-    console.log(f);
+    return f;
+    //console.log(f);
 }
-testTwo();
+console.log(testTwo());
 
 //for-of ใช้คู่กับ array
 function testThree(){
